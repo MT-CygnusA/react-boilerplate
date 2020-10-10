@@ -1,5 +1,6 @@
 .idea
 .cache/
+.nyc_output
 coverage/
 dist/*
 !dist/index.html
