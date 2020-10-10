@@ -24,7 +24,7 @@ const AuthenticatedLayout: React.FC<IAuthenticatedLayoutProps> = ({ onLogout, ch
       </Menu>
 
       <Container style={{ marginTop: '7em' }}>
-        <Header>Customer feedback system</Header>
+        <Header>Feedback system</Header>
 
         <Divider horizontal>Description area</Divider>
 
@@ -32,19 +32,10 @@ const AuthenticatedLayout: React.FC<IAuthenticatedLayoutProps> = ({ onLogout, ch
           customers are speaking about in their feedback and what emotions they express. It simply
           displays product review as well as emotions that their customers express
           when speaking about aspects.</p>
-        <p>In the filters panel we can filter by theme.
-          In a filter user can select one of the human-readable options from dropdown.
-          When a filter is updated the feed updates accordingly.
-          The feed is simply a list of product reviews. Each component in a list
-          displays a comment field of a product review as well as themes with their sentiment:</p>
         <List>
           <List.Item>
             <List.Icon name='thumbs down outline' color='red' />
             <List.Content>Negative sentiment</List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Icon name='file outline' color='orange' />
-            <List.Content>Neutral sentiment</List.Content>
           </List.Item>
           <List.Item>
             <List.Icon name='thumbs up outline' color='teal' />

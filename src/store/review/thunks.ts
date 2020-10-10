@@ -9,17 +9,17 @@ export const getCurrentReviews = (): ThunkResult<Promise<void>> => async (dispat
   await requestReviews(dispatch, params);
 };
 
-export const updateFilterTheme = (themeId?: number): ThunkResult<Promise<void>> => async (dispatch, getState) => {
-  const filter = getFilterParams(getState());
-  const updatedFilter = {
-    ...filter,
-    offset: undefined,
-    theme_id: themeId,
-  };
-
-  dispatch(setReviewParams(updatedFilter));
-  await requestReviews(dispatch, updatedFilter);
-};
+// export const updateFilterTheme = (themeId?: number): ThunkResult<Promise<void>> => async (dispatch, getState) => {
+//   const filter = getFilterParams(getState());
+//   const updatedFilter = {
+//     ...filter,
+//     offset: undefined,
+//     theme_id: themeId,
+//   };
+//
+//   dispatch(setReviewParams(updatedFilter));
+//   await requestReviews(dispatch, updatedFilter);
+// };
 
 export const updateFilterPage = (page?: number): ThunkResult<Promise<void>> => async (dispatch, getState) => {
   const filter = getFilterParams(getState());

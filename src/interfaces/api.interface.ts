@@ -8,8 +8,8 @@ export interface AuthRequest {
 }
 
 export interface AuthData {
-  expire: string;
-  token: string;
+  expire: string | null;
+  access_token: string;
 }
 
 export interface AuthResponse extends AuthData {

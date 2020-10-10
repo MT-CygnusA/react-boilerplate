@@ -2,14 +2,14 @@ import axios from 'axios';
 import { getAuthData, resetAuthData } from './auth.api';
 
 const internalAPI = axios.create({
-  baseURL: 'https://example.com/',
+  baseURL: 'http://localhost:8000/',
 });
 
 internalAPI.interceptors.request.use(
   (config) => {
     const authData = getAuthData();
-    if (authData?.token) {
-      config.headers['Authorization'] = 'Bearer ' + authData.token;
+    if (authData?.access_token) {
+      config.headers['Authorization'] = 'Bearer ' + authData.access_token;
     }
 
     config.headers['Accept'] = 'application/json';
