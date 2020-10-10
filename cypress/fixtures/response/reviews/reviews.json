@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": 59458292,
+      "created_at": "2019-07-18T23:28:36Z",
+      "comment": "Functional programming emphasizes an evaluation of functions. Object-oriented programming based on a concept of objects."
+    },
+    {
+      "id": 59457786,
+      "created_at": "2019-07-18T23:18:53Z",
+      "comment": "Functional programming uses immutable data. Object-oriented uses the mutable data."
+    },
+    {
+      "id": 59457787,
+      "created_at": "2019-07-18T23:10:33Z",
+      "comment": "Parallel programming supported by Functional Programming. Object-oriented programming does not support parallel programming."
+    },
+    {
+      "id": 59457788,
+      "created_at": "2019-07-18T22:40:21Z",
+      "comment": "Functional programming does follow a declarative programming model. Object-oriented programming does follow an imperative programming model."
+    },
+    {
+      "id": 59457789,
+      "created_at": "2019-07-18T22:33:56Z",
+      "comment": "In Functional programming, the statements can be executed in any order. In OOPs, the statements should be executed in particular order."
+    },
+    {
+      "id": 59457790,
+      "created_at": "2019-07-18T22:03:48Z",
+      "comment": "In Functional programming, recursion is used for iterative data. In OOPs, loops are used for iterative data."
+    },
+    {
+      "id": 59457791,
+      "created_at": "2019-07-18T22:03:28Z",
+      "comment": "The basic elements of functional programming are Variables and Functions. The basic elements of object-oriented programming are objects and methods."
+    },
+    {
+      "id": 59446666,
+      "created_at": "2019-07-18T21:48:19Z",
+      "comment": "The functional programming is used only when there are few things with more operations."
+    },
+    {
+      "id": 59454247,
+      "created_at": "2019-07-18T21:38:39Z",
+      "comment": "Object-oriented programming is used when there are many things with few operations."
+    },
+    {
+      "id": 59454248,
+      "created_at": "2019-07-18T21:19:52Z",
+      "comment": "Functional Programming and Object-oriented programming both are different concepts of programming language."
+    },
+    {
+      "id": 59457792,
+      "created_at": "2019-07-18T21:07:30Z",
+      "comment": "The aim of both Functional Programming vs OOP languages is to provide the bug-free code, which can be easily understandable, well-coded, managed and rapid development."
+    },
+    {
+      "id": 59457793,
+      "created_at": "2019-07-18T21:03:16Z",
+      "comment": "Functional programming and object-oriented programming uses a different method for storing and manipulating the data. In functional programming, data cannot be stored in objects and it can only be transformed by creating functions. In object-oriented programming, data is stored in objects."
+    },
+    {
+      "id": 59442137,
+      "created_at": "2019-07-18T21:03:09Z",
+      "comment": "In Object-oriented programming, it is really hard to maintain objects while increasing the levels of inheritance."
+    },
+    {
+      "id": 59446671,
+      "created_at": "2019-07-18T20:56:00Z",
+      "comment": "Extreme programming (XP) is an agile methodology, considered one of the most effective in software development."
+    },
+    {
+      "id": 59454249,
+      "created_at": "2019-07-18T20:54:57Z",
+      "comment": "XP team size varies from a small number of five people up to 12. Pair programming is when two developers work on one station together."
+    },
+    {
+      "id": 59442138,
+      "created_at": "2019-07-18T20:49:09Z",
+      "comment": "XP follows the agile principles. However, it has five key values: simplicity, communication, courage, respect, and feedback."
+    },
+    {
+      "id": 59454250,
+      "created_at": "2019-07-18T20:42:46Z",
+      "comment": "Fast. Instead of a couple of years, like in other software development methods, extreme programming projects last only several months."
+    },
+    {
+      "id": 59446678,
+      "created_at": "2019-07-18T20:41:34Z",
+      "comment": "In extreme programming, the feedback loop is reduced. Thus, the cost of change is also reduced. In other methodologies, the code is remanufactured only after customer feedback. Here, changes are implemented throughout the developmental period."
+    },
+    {
+      "id": 59456659,
+      "created_at": "2019-07-18T20:40:53Z",
+      "comment": "Lack of documentation. The constant changes cannot be documented properly. Thus, there are high risks of unexpected failures that cannot be tracked. Even when bugs are fixed, without accurate documentation it’s possible that the same errors can recur."
+    },
+    {
+      "id": 59457795,
+      "created_at": "2019-07-18T20:38:47Z",
+      "comment": "There is a lot of pressure working with tight deadlines. If the developers have high stress levels completing tasks on time, they are more likely to make mistakes while coding. Subsequently, software quality could be reduced due to the scheduling."
+    }
+  ]
+}
