@@ -4,7 +4,7 @@ const jsonServer = require('json-server');
 const jwt = require('jsonwebtoken');
 
 const server = jsonServer.create();
-const router = jsonServer.router('./db.json');
+const router = jsonServer.router(__dirname + '/db.json');
 const userdb = JSON.parse(fs.readFileSync(__dirname + '/users.json', 'UTF-8'));
 
 server.use(bodyParser.urlencoded({ extended: true }));
@@ -26,17 +26,17 @@ function verifyToken(token) {
 }
 
 // Check if the user exists in database
-function isAuthenticated({ email, password }) {
-  return userdb.users.findIndex((user) => user.email === email && user.password === password) !== -1;
+function isAuthenticated({ username, password }) {
+  return userdb.users.findIndex((user) => user.username === username && user.password === password) !== -1;
 }
 
 // Register New User
 server.post('/auth/register', (req, res) => {
   console.log('register endpoint called; request body:');
   console.log(req.body);
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
-  if (isAuthenticated({ email, password }) === true) {
+  if (isAuthenticated({ username, password }) === true) {
     const status = 401;
     const message = 'Email and Password already exist';
     res.status(status).json({ status, message });
@@ -58,7 +58,7 @@ server.post('/auth/register', (req, res) => {
     const last_item_id = data.users[data.users.length - 1].id;
 
     //Add new user
-    data.users.push({ id: last_item_id + 1, email: email, password: password });
+    data.users.push({ id: last_item_id + 1, username: username, password: password });
     const writeData = fs.writeFile('./users.json', JSON.stringify(data), (err, result) => {
       // WRITE
       if (err) {
@@ -71,23 +71,23 @@ server.post('/auth/register', (req, res) => {
   });
 
   // Create token for new user
-  const access_token = createToken({ email, password });
+  const access_token = createToken({ username, password });
   console.log('Access Token:' + access_token);
-  res.status(200).json({ access_token });
+  res.status(200).json({ access_token, expire: null });
 });
 
 // Login to one of the users from ./users.json
 server.post('/auth/login', (req, res) => {
   console.log('login endpoint called; request body:');
   console.log(req.body);
-  const { email, password } = req.body;
-  if (isAuthenticated({ email, password }) === false) {
+  const { username, password } = req.body;
+  if (isAuthenticated({ username, password }) === false) {
     const status = 401;
-    const message = 'Incorrect email or password';
+    const message = 'Incorrect username or password';
     res.status(status).json({ status, message });
     return;
   }
-  const access_token = createToken({ email, password });
+  const access_token = createToken({ username, password });
   console.log('Access Token:' + access_token);
   res.status(200).json({ access_token });
 });
