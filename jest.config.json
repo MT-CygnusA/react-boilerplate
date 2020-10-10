@@ -1,0 +1,19 @@
+{
+  "transform": {
+    "^.+\\.ts(x)?$": "ts-jest"
+  },
+  "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.ts(x)?$",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "testEnvironment": "node",
+  "globals": {
+    "ts-jest": {
+      "diagnostics": {
+        "warnOnly": true
+      }
+    }
+  },
+  "setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"],
+  "testPathIgnorePatterns" : [
+    "<rootDir>/cypress"
+  ]
+}

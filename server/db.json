@@ -1,0 +1,24 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "created_at": 1601400822711,
+      "comment": "Functional programming emphasizes an evaluation of functions.\nObject-oriented programming based on a concept of objects."
+    },
+    {
+      "id": 2,
+      "created_at": 1601400842817,
+      "comment": "Functional programming uses immutable data.\nObject-oriented uses the mutable data."
+    },
+    {
+      "id": 3,
+      "created_at": 1601400860701,
+      "comment": "Functional programming does follow a declarative programming model.\nObject-oriented programming does follow an imperative programming model."
+    },
+    {
+      "id": 4,
+      "created_at": 1601400889706,
+      "comment": "Parallel programming supported by Functional Programming.\nObject-oriented programming does not support parallel programming."
+    }
+  ]
+}
