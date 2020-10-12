@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/MT-CygnusA/react-boilerplate/compare/v1.0.0...v1.0.1) (2020-10-12)
+
+
+### Bug Fixes
+
+* **lint:** fix lint errors ([d6d9d48](https://github.com/MT-CygnusA/react-boilerplate/commit/d6d9d485e2be9b86c17a2b9f0c15857c192da8af))
+* **lint:** fix scss lint error ([4f17d5a](https://github.com/MT-CygnusA/react-boilerplate/commit/4f17d5ae49df4ca26050ea534db01f3bcfdfbb82))
+
 # 1.0.0 (2020-10-11)
 
 
