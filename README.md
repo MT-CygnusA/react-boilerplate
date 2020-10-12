@@ -1,39 +1,44 @@
 # React Boilerplate
 
-#### Demo
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6ea423b05d544e3e8182d3507e2b961f)](https://www.codacy.com/gh/MT-CygnusA/react-boilerplate/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MT-CygnusA/react-boilerplate&amp;utm_campaign=Badge_Grade)
 
-----
+## Server API
 
-#### Technical details
+Base url: http://localhost:8000
+
+LOGIN: POST /auth/login
+
+REVIEW: GET /reviews
+
+### Technical details
 
 SPA with React/Redux/Thunk
 Custom webpack setup. The Prettier is used as code formatter.
 UI is based on Semantic Library.
 
-- [React](https://github.com/facebook/react),
-- [TypeScript](https://github.com/microsoft/TypeScript),
-- [Semantic UI](https://react.semantic-ui.com/),
-- [Webpack](https://webpack.js.org/),
-- [Redux](https://react-redux.js.org/),
-- [Prettier](https://prettier.io/),
-- [Cypress](https://www.cypress.io).
+  -  [React](https://github.com/facebook/react),
+  -  [TypeScript](https://github.com/microsoft/TypeScript),
+  -  [Semantic UI](https://react.semantic-ui.com/),
+  -  [Webpack](https://webpack.js.org/),
+  -  [Redux](https://react-redux.js.org/),
+  -  [Prettier](https://prettier.io/),
+  -  [Cypress](https://www.cypress.io).
 
-
-#### Current unit test coverage
+### Current unit test coverage
 
 | % Stmts | % Branch | % Funcs | % Lines |
 
-|   ----- |    ----  |   ----- |   ----- |
+| ----- | ---- | ----- | ----- |
 
-#### Test types
+### Test types
 
-- e2e tests - cypress
-- Standard unit test - src/utils/helpers.test.ts
-- Enzyme snapshot  
+  -  e2e tests - cypress
+  -  Standard unit test - src/utils/helpers.test.ts
+  -  Enzyme snapshot
 
-#### CLI Commands
+### CLI Commands
 
-``` bash
+```bash
 # First install dependencies:
 npm install
 
