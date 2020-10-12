@@ -1,5 +1,7 @@
 # React Boilerplate
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3626ca47a4b0485ab834e631102c9aa0)](https://app.codacy.com/gh/MT-CygnusA/react-boilerplate?utm_source=github.com&utm_medium=referral&utm_content=MT-CygnusA/react-boilerplate&utm_campaign=Badge_Grade_Settings)
+
 #### Demo
 
 ----
